@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <from>
+            <fieldset>
+                <legend>input 태그 간단 연습</legend>
+                <input type = "url">
+                <br>
+                <input type = "password">
+            </fieldset>
+       </from>
+    </head>
+
+
+    <head>
+        <form>
+            <br><br>
+         <fieldset>
+            <legend>간단한 로그인 폼 만들기</legend>
+                 <label for = "user_id">아이디 : </label>
+                 <input type = "text" id = "user_id" size = "10" >
+                 <label for = "user_password"> 비밀번호 : </label>
+                 <input type = "password" id = "user_password" size = "30">
+                 <input type = "submit" value = "로그인">
+         </fieldset>
+        </form>
+    
+    </head>
+
+    <head>
+        <form>
+            <br><br><br>
+            <fieldset>
+                <legend>배송 정보 입력하는 폼 만들기</legend>
+                <ul>
+                    <li>
+                        <label for = "user_name">이름</label>
+                        <input type = "text" size = "10" id = "user_name">
+                    </li>
+                    <li>
+                        <label for = "user_add">배송주소</label>
+                        <input type = "text" id = "user_add" size = "10">
+                    </li>
+                    <li>
+                        <label for = "user_email">이메일</label>
+                        <input type = "email" id = "user_email" size = "10">
+                    </li>
+                    <li>
+                        <label for = "user_tel">연락처</label>
+                        <input type = "tel" id = "user_tel" size = "10">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </head>
+
+    <head>
+        <br><br><br>
+        <form>
+            <fieldset>
+                <legend>체크박스 라디오버튼 폼</legend>
+
+                <p><b>주문할 상품을 선택해 주세요.</b></p>
+                <input type = "checkbox" id = "user_choice" value = "S_3kg">
+                <label for = "user_choice">선물용 3kg</label>
+                
+                <label><input type = "checkbox" value = "S_5kg"> 선물용 5kg</label>
+                <label><input type = "checkbox" value = "F_3kg"> 가정용 3kg</label>
+                <label><input type = "checkbox" value = "F_5kg"> 가정용 5kg</label>
+                
+                <p><b>포장 선택</b></p>
+                <label><input type = "radio" value = "yes">선물 포장</label>
+
+                <input type = "radio" value = "no">
+                <label for = "user_s_no">선물 포장 안 함</label>
+            </fieldset>
+        </form>
+    </head>
+</html>
