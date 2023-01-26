@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <div id = "container">
+    <head>
+        <form>
+            <h1>회원가입을 환영합니다</h1>
+            <fieldset>
+                <legend>사용자 정보</legend>
+                <ul>
+                    <li>
+                        <label for = "user_id">아이디</label>
+                        <input id = "user_id" type = "text">
+                    </li>
+                    <li>
+                        <label for = "user_email">이메일</label>
+                        <input id = "user_email" type = "email">
+                    </li>
+                    <li>
+                        <label for = "user_pw">비밀번호</label>
+                        <input id = "user_pw" type = "password">
+                    </li>
+                    <li>
+                        <label for = "user_Rpw">비밀번호 확인</label>
+                        <input id = "user_Rpw" type = "password">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>이벤트와 새로운 소식</legend>
+                <input id = "alarm yes" type = "radio">
+                <label for = "alarm yes">메일 수신</label>
+                <input id = "alarm no" type = "radio">
+                <label for = "alarm no">메일 수신 안 함</label>
+            </fieldset>
+
+            <div id = "buttons">
+                <br>
+            <input type = "submit" value = "가입하기">
+            <input type = "submit" value = "취소">
+            </div>
+
+            <div id = "count">
+                <br>
+                <fieldset>
+                    <label>개수 입력하기</label>
+                    <ul>
+                        <li>
+                            <input type = "checkbox" id = "count_3kg">
+                            <label for = "count_3kg">선물용 3kg</label>
+                            <input type = "number" min = "1" max = "5">
+                            개 (최대 5개)
+                        </li>
+                        <li>
+                            <input type = "checkbox" id = "count_5kg">
+                            <label for = "count_5kg">선물용 5kg</label>
+                            <input type = "number" min = "1" max = "3">
+                            개 (최대 3개)
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+        </form>
+     </head>
+    </div>
+</html>
