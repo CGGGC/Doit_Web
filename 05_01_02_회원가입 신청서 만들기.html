@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <div id = "container">
+    <head>
+        <form>
+            <h1>회원가입을 환영합니다</h1>
+            <fieldset>
+                <legend>사용자 정보</legend>
+                <ul>
+                    <li>
+                        <label for = "user_id">아이디</label>
+                        <input id = "user_id" type = "text">
+                    </li>
+                    <li>
+                        <label for = "user_email">이메일</label>
+                        <input id = "user_email" type = "email">
+                    </li>
+                    <li>
+                        <label for = "user_pw">비밀번호</label>
+                        <input id = "user_pw" type = "password">
+                    </li>
+                    <li>
+                        <label for = "user_Rpw">비밀번호 확인</label>
+                        <input id = "user_Rpw" type = "password">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>이벤트와 새로운 소식</legend>
+                <input id = "alarm yes" type = "radio">
+                <label for = "alarm yes">메일 수신</label>
+                <input id = "alarm no" type = "radio">
+                <label for = "alarm no">메일 수신 안 함</label>
+            </fieldset>
+
+            <div id = "buttons">
+                <br>
+            <input type = "submit" value = "가입하기">
+            <input type = "submit" value = "취소">
+            </div>
+
+            <div id = "s_count">
+                <br>
+                <fieldset>
+                    <legend>선물용 개수 입력하기</legend>
+                    <ul>
+                        <li>
+                            <input type = "checkbox" id = "s_count_3kg">
+                            <label for = "s_count_3kg">선물용 3kg</label>
+                            <input type = "number" min = "1" max = "5">
+                            개 (최대 5개)
+                        </li>
+                        <li>
+                            <input type = "checkbox" id = "s_count_5kg">
+                            <label for = "s_count_5kg">선물용 5kg</label>
+                            <input type = "number" min = "1" max = "3">
+                            개 (최대 3개)
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div id = "h_count">
+                <br>
+                <fieldset>
+                    <legend>가정용 개수 입력하기</legend>
+                    <ul>
+                        <li>
+                            <input type = "checkbox" id = "h_count_3kg">
+                            <label for = "h_count_5kg">가정용 3kg</label>
+                            <input type = "range" min = "1" max = "5">개 (최대 5개)
+                        </li>
+                        <li>
+                            <input type = "checkbox" id = "h_count_5kg">
+                            <label for = "h_count_5kg">가정용 5kg</label>
+                            <input type = "range" min = "1" max = "3">개 (최대 3개)
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div id = "add">
+                <br>
+                <fieldset>
+                    <legend>배송 정보</legend>
+                    <ul>
+                        <li>
+                            <label for = "add_name">이름</label>
+                            <input type = "text" id = "add_name">
+                        </li>
+                        <li>
+                            <label for = "add_home">배송 주소</label>
+                            <input type = "text" id = "add_home">
+                        </li>
+                        <li>
+                            <label for = "add_email">이메일</label>
+                            <input type = "email" id = "add_email">
+                        </li>
+                        <li>
+                            <label for = "add_address">연락처</label>
+                            <input type = "text" id = "add_address">
+                        </li>
+                        <li>
+                            <label for = "add_check">배송지정 (주문일로부터 최소 3일 이후)</label>
+                            <br>
+                            <input type = "date" id = "add_check">
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+
+            <div id = "check_buttons">
+                <input type = "submit" value = "주문하기">
+                <input type = "reset" value = "취소하기">
+            </div>
+
+            <div id = "reset">
+                <br>
+                <fieldset>
+                    <legend>반품 정보</legend>
+                    <p>만일 수령한 상품에 문제가 있다면 즉시 <b>반품 신청</b>해 주세요.</p>
+                    <p>반품 신청시 상품의 상태를 사진으로 첨부해 주세요.</p>
+                    
+                    <input type = "hidden" value = "사이트를 통한 직접 반품">
+                    <input type = "file">
+                </fieldset>
+            </div>
+
+            <div id = "date">
+                <h1>날짜 & 시간 지정하기</h1>
+                <input type = "date | month | week">
+                <input type = "date" min = "2023-01-01" max = "2023-01-31">
+                <input type = "time">
+            </div>
+        </form>
+     </head>
+    </div>
+</html>
