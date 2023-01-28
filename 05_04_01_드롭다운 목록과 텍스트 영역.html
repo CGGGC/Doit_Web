@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <div id = "container">
+    <head>
+        <form>
+            <h1>회원가입을 환영합니다</h1>
+            <fieldset>
+                <legend>사용자 정보</legend>
+                <ul>
+                    <li>
+                        <label for = "user_id">아이디</label>
+                        <input id = "user_id" type = "text" 
+                        autofocus placeholder = "4자 ~ 10자 사이, 공백없이" required>
+                    </li>
+                    <li>
+                        <label for = "user_email">이메일</label>
+                        <input id = "user_email" type = "email" required>
+                    </li>
+                    <li>
+                        <label for = "user_pw">비밀번호</label>
+                        <input id = "user_pw" type = "password" 
+                        placeholder = "문자와 숫자, 특수 기호 포함" required>
+                    </li>
+                    <li>
+                        <label for = "user_Rpw">비밀번호 확인</label>
+                        <input id = "user_Rpw" type = "password" required>
+                    </li>
+                    <li>
+                        <label for = "path">가입 경로</label>
+                        <select>
+                            <option value = "blog">블로그</option>
+                            <option value = "search">검색</option>
+                            <option value = "sns">SNS</option>
+                            <option value = "etc">기타</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for = "memo">메모</label>
+                        <textarea id = "memo" cols = "40" rows = "4"
+                        placeholder = "남기실 말씀이 있다면여기에">
+                        </textarea>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>이벤트와 새로운 소식</legend>
+                <input type = "radio" id = "alarm yes" value = "alarm_yes">
+                <label for = "alarm yes">메일 수신</label>
+                <input type = "radio" id = "alarm no" value = "alarm_no" checked>
+                <label for = "alarm no">메일 수신 안 함</label>
+            </fieldset>
+
+            <div id = "buttons">
+                <input type = "submit" value = "가입하기">
+                <input type = "reset" value = "취소">
+            </div>
+        </form>
+    </head>
+    </div>
+</html>
