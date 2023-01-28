@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <div id = "container">
+            <form>
+                <fieldset style = "width:25%">
+                    <h1>프런트엔드 개발자 지원서</h1>
+                    <p> HTML, CSS, JSP 의 기술을 이해하고 실무 경험이 있는 분을 찾습니다.</p>
+
+                    <br>
+                    <label><b>개인 정보</b></label>
+                    <ul>
+                        <li>
+                            <label for = "name">이름</label>
+                            <input id = "name" type = "text" 
+                            placeholder = "공백 없이 입력하세요.">
+                        </li>
+                        <li>
+                            <label for = "tel">연락처</label>
+                            <input id = "tel" type = "tel"> 
+                        </li>
+                    </ul>
+
+                    <br>
+                    <label><b>지원 분야</b></label>
+                    <ul>
+                        <li>
+                            <input type = "radio" id = "web_pub">
+                            <label for ="web_pub"> 웹 퍼블리싱 </label>
+                        </li>
+                        <li>
+                            <input type = "radio" id = "web_pg">
+                            <label for = "web_pg"> 웹 애플리케이션 개발</label>
+                        </li>
+                        <li>
+                            <input type = "radio" id = "cleaner">
+                            <label for = "cleaner"> 개발 환경 개선</label>
+                        </li>
+                    </ul>
+
+                    <br>
+                    <label><b>지원 동기</b></label>
+                    <ul>
+                        <li>
+                            <textarea id = "memo" cols = "60" row = "5" 
+                            placeholder = "본사 지원 동기를 간략히 써 주세요.">
+                            </textarea>    
+                        </li>
+                        <input type = "submit" value = "접수하기">
+                        <input type = "reset" value = "다시쓰기">
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+    </head>
+</html>
