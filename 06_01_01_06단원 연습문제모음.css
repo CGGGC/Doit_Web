@@ -1,0 +1,36 @@
+
+/*p요소의 전체 폰트 조절*/
+p {
+    font-weight:700;
+   /* font-style:italic; */
+    text-align:center;
+}
+
+/* title_bg & title_font를 h1 요소에 적용*/
+.title_bg{
+    background-color:rgb(27, 24, 219);
+
+}
+.title_font{
+    color:azure;
+}
+
+/*본문 폰트 색 조절*/
+.body_font_01{
+    color:blueviolet;
+}
+.body_font_02{
+    color:aqua;
+}
+.body_font_03 {
+    color:#f10a0a;
+   /*font-style:bold;*/
+    font-weight:bold;
+}
+
+#container_01 {
+    width: 10%;       /*너비*/
+    margin: 10px auto;  /*중앙 배치*/
+    padding: 10px;      /*테두리와 내용 사이 여백*/
+    text-align:center;
+}
