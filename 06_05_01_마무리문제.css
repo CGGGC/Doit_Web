@@ -1,0 +1,14 @@
+
+/* .은 클래스 선택자를 뜻함 */
+.title_bg {
+    display: inline-block;
+    background-color:black;
+}
+.title_font {
+    color:white;
+}
+/* #은 id 선택자를 뜻하므로 div id ,, */
+#container_02 {
+    color:blue;
+    margin:40px;
+}
