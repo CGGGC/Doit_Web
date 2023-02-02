@@ -1,0 +1,14 @@
+.list {
+    list-style-type: none;
+}
+
+.nav {
+    width: 300px;
+    margin: 50px 30px;
+}
+
+.li{
+    border: 1px solid #222;
+    padding: 20px 40px;
+    margin: 5px;
+}
