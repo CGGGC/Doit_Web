@@ -1,0 +1,30 @@
+/*cpation의 label을 하단으로*/
+.caption {
+    caption-side: bottom;
+}
+
+/*table의 모든 글자를 center로*/
+.tr_01 {
+    text-align: center;
+}
+ /*1행의 배경색을 지정*/
+.tr_02 {
+    background-color: #eee;
+}
+
+/*표에 선을 그려줌 & padding 설정*/
+.td_01 {
+    padding: 10px;
+    border: 1px solid black;
+
+}
+
+/*제목 글자 크게*/
+.td_02 {
+    font-weight: bold;
+    font-size: 18px;
+}
+ /*무조건 table 태그에만 지정하면 됨 & 표의 선들을 합쳐줌*/
+.table_01 {
+    border-collapse: collapse;
+}
