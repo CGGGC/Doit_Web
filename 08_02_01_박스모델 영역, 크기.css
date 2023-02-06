@@ -1,0 +1,61 @@
+/*글씨체와 굵기, 텍스트 정렬, 표 설정*/
+.td_01 {
+    width: 60px;
+    font-weight: bold;
+}
+
+.td_01_01 {
+    text-align: center;
+}
+
+.td_02 {
+    width: 60px;
+    font-weight: bold;
+}
+
+.td_02_01 {
+    text-align: center;
+}
+
+.td_03 {
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.td_04 {
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    height: 1cm;
+}
+
+/*테두리 설정*/
+#main_00 {
+    width: 600px;
+    border: none;
+}
+
+#container_00 {
+    border: 2px solid black;
+    border-top: 1px solid black;
+}
+
+#container_01 {
+    border: 2px solid black;
+    border-top: 1px solid black;
+}
+
+#container_02 {
+    border: 2px solid black;
+    border-top: 1px solid black;
+}
