@@ -1,0 +1,28 @@
+/*실선 & 테두리 얇게*/
+#box1 {
+    border-style: solid;
+    border-width: thin;
+
+    border-color: blue;
+}
+
+/*점선 & 테두리 두껍게*/
+#box2 {
+    border-style: dotted;
+    border-width: thick;
+}
+
+/*각 방향별로 나눠서 적용*/
+#box3 {
+    border-right-style: dashed;
+    border-left-style: dashed;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+
+    border-color: aqua;
+}
+
+#box4 {
+    border-style: solid;
+    border-radius: 25px;
+}
