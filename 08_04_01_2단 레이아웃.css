@@ -1,0 +1,36 @@
+#container {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+#header {
+    background-color: rgb(61, 60, 60);
+    height: 120px;
+    width: 100%;
+}
+
+#sidebar {
+    float: left;
+    background-color: rgb(88, 88, 88);
+    width: 300px;
+    height: 600px;
+}
+
+#main {
+    /* display: inline-block; */
+    /*display 넣어버리면 기본 마진 패딩 있음*/
+    float: right;
+    background-color: wheat;
+    width: 900px;
+    height: 600px;
+}
+
+#footer {
+    /* margin-top: -19px; */
+    /*display 쓸거면 이렇게 음수 값으로 붙여줘야함*/
+    clear: right;
+    /*clear 해줘야 플로팅이 해제되어서, 제대로 동작*/
+    width: 100%;
+    height: 100px;
+    background-color: rgb(61, 60, 60);
+}
