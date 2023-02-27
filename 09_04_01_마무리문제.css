@@ -1,0 +1,23 @@
+#body_01 {
+    /*font-style 이런 거 아님*/
+    color: rgb(0, 0, 0);
+    background: url("https://www.wondriumdaily.com/wp-content/uploads/2021/09/First-State-of-Matter-Solid-Its-Common-Classes_QBS_Featured.jpg");
+    background-repeat: no-repeat;
+    /*background-origin: right;*/
+    background-position: left bottom;
+    background-size: 100% 70%;
+    /*scroll 하게되면 박스모델 부분에만 배경 이미지가 적용됨*/
+    background-attachment: fixed;
+    background-color: gray;
+}
+
+/*p 요소 위치만 조정*/
+.body_size_01 {
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 600px;
+}
+
+#p_01 {
+    font-weight: bold;
+}
