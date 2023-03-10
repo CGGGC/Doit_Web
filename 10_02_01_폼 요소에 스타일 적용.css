@@ -1,0 +1,39 @@
+.fd_00 {
+    width: 400px;
+}
+
+.legend_00 {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.label_00 {
+    float: left;
+    font-size: 13px;
+    width: 110px;
+}
+
+#ok {
+    /*text-align 속성은 일반 텍스트나 레이어로 감싸진 텍스트를 중앙 정렬할 때 쓰이므로
+    input 에다가 써버리면 x 따라서 div 나 span 태그로 한 번 감쌀 것*/
+    text-align: center;
+    margin-top: -7px;
+    margin-bottom: -10px;
+}
+
+#submit_00 {
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    size: 100px;
+}
+
+/*필수 입력 필드와 읽기 전용 필드의 스타일 지정*/
+/*body_00 으로 넣어주게 되면 첫 form 에서만 활성화됨*/
+#form_00 [id *= login] {
+    border: 1px solid red;
+}
+
+#form_00 [id *= add] {
+    border: none;
+}
