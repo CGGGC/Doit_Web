@@ -1,0 +1,136 @@
+/*이것도 일반 css에 같이 적용해버리지 뭐*/
+/*마진 들어가있으면 오류난다;; 패딩만 따로 해주기는 귀찮네*/
+/*더군다나 head_00 의 a 에만 적용하고 싶은데 어쩌지*/
+a[href] {
+    text-decoration-line: none;
+    color: black;
+    /*이거네 이거야  a를 바꿔야하네;;*/
+}
+
+/*head_01 에다가 같이 적용 안되나?*/
+/*
+a:active {
+    color: white;
+}
+/*하이퍼링크라 따로 적용해줘야하네 귀찮아라*/
+
+#head_00 {
+    height: 70px;
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+#head_00 [id *=head_] {
+    font-weight: bold;
+    font-size: 12pt;
+
+    float: left;
+
+    margin-top: 15px;
+}
+
+/* 이렇게 해도 되고
+#head_00 [id *= head_]:link {
+    text-decoration: none;
+} 
+
+#head_00 [id *= head_]:visited {
+    text-decoration: none;
+} 
+*/
+
+/*이렇게 해도 되고*/
+/*알아서 할 것*/
+#head_00 [id *=head_]:link,
+#head_00 [id *=head_]:visited {
+    color: black;
+    text-decoration-line: none;
+    /*왜 밑줄하고 색이 안바뀌는데????????*/
+}
+
+#head_00 [id *=head_]:hover {
+    background-color: gray;
+}
+
+#head_00 [id *=head_]:active,
+a:active {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+/*padding으로 감싸버리면 hover 단계에서 배경이 padding으로 키운 크기 만큼 적용됨
+따라서 margin 으로 테두리 밖 크기를 조정 해줄 것*/
+/*padding은 배경 색 더 넓게 하고 싶을 때 쓸 것*/
+#head_01 {
+    margin-left: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*padding-top & bottom 을 해줌으로 배경 색이 더 넓어보이게 함*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+#head_02 {
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#head_03 {
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#head_04 {
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*여기까지가 head 요소들의 css*/
+
+
+/*여기부터 main css*/
+#main_00 {
+    margin-top: 50px;
+    margin-left: 500px;
+    width: 500px;
+    height: 240px;
+    border: 1px solid black;
+}
+
+/*head_01 클릭하면 main_0이 바뀌도록 설정*/
+#main_00:target {
+    background-color: blue;
+    color: white;
+}
+
+#main_00 [id *=main_] {
+    margin-left: 20px;
+}
+
+#main_03 {
+    margin-top: 50px;
+    margin-left: 500px;
+    width: 500px;
+    height: 240px;
+    border: 1px solid black;
+}
+
+/*head_02 클릭하면 main_03이 바뀌도록 설정*/
+#main_03:target {
+    background-color: blue;
+    color: white;
+}
+
+#main_03 [id *=main_] {
+    margin-left: 20px;
+}
