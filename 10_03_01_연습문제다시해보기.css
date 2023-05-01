@@ -1,0 +1,115 @@
+/*head_00~head_04까지*/
+#head_00 {
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px gray;
+}
+
+#head_00[id*=head_] {
+    margin-top: 13px;
+    font-size: 15px;
+}
+
+#head_01 {
+    float: left;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    margin-left: 40px;
+}
+
+#head_02 {
+    float: left;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    margin-left: 50px;
+}
+
+#head_03 {
+    float: left;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    margin-left: 50px;
+}
+
+#head_04 {
+    float: left;
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    margin-left: 50px;
+}
+
+/*main_head 내용 css*/
+#main_00,
+#main_01 {
+    border: 1px solid black;
+    border-radius: 5px;
+
+    width: 460px;
+    height: 200px;
+    /*main 블럭을 화면 중앙에 넣을 수 있도록,,*/
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#main_head_00,
+#main_head_01 {
+    margin-left: 13px;
+    margin-bottom: 17px;
+}
+
+#main_text_00,
+#main_text_01 {
+    margin-left: 13px;
+}
+
+/*여기서부터 클릭시 변화 & 앵커 설정*/
+#head_01:link,
+#head_02:link,
+#head_01:visited,
+#head_02:visited {
+    text-decoration-line: none;
+    color: black;
+}
+
+#head_01:hover,
+#head_02:hover {
+    background-color: gray;
+    color: white;
+}
+
+#head_01:active,
+#head_02:active {
+    background-color: tan;
+    color: white;
+}
+
+/*head_00 클릭하면 main_00 이 바뀌도록 설정*/
+#main_00:target,
+#main_01:target {
+    background-color: blue;
+    color: white;
+}
+
+/*하이퍼링크 수정*/
+/*미쳤다! 이거다!*/
+/*head_00 의 모든 하이퍼링크만! 수정!*/
+#head_00 a {
+    text-decoration-line: none;
+    color: black;
+}
