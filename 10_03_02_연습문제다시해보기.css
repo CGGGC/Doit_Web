@@ -1,0 +1,34 @@
+/*main_text_00 의 div 요소(부모)에서 그 자식의 div 구별*/
+#main_text_00 div:nth-of-type(2n+1) {
+    background-color: gray;
+    color: white;
+}
+
+#ul_00[id*=ul] {
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+/*ul_00 의 홀수 li 태그 뒤에 after*/
+#ul_00 li:nth-of-type(2n+1)::after {
+    content: "NEW!!";
+    font-size: 12px;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    /*2px -> 위, 아래 4px -> 왼쪽, 오른쪽*/
+    padding: 2px 4px;
+}
+
+
+/*after가 먼저 오면 적용되지 않음*/
+#ul_00 li::after:nth-of-type(2n+1) {
+    content: "NEW!!";
+}
+
+#ul_li_00,
+#ul_li_01,
+#ul_li_02,
+#ul_li_03 {
+    margin-bottom: 10px;
+}
