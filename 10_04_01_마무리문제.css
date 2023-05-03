@@ -1,0 +1,46 @@
+#main_00 [id*=menu] {
+    float: left;
+
+    border-right: 1px solid black;
+
+    background-color: rgb(202, 191, 191);
+    padding: 5px 20px;
+}
+
+#menu_00 {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+/*important 는 지양할 것*/
+/*각 각 다르게 적용시킬 거면 전부 나눠서 할 것*/
+/*연결 선택자, 속성 선택자 까지 쓰는 경우는 전부 같을 때만 그렇게 하자*/
+#menu_05 {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-right: none !important;
+}
+
+/*가상 클래스 사용 라인*/
+#main_00 [id*=menu]:link,
+#main_00 [id*=menu]:visited {}
+
+#main_00 [id*=menu]:hover {
+    background-color: black;
+    color: white;
+}
+
+#main_00 [id*=menu]:active {}
+
+/*메뉴6 는 다르게 설정*/
+#menu_05:link,
+#menu_05:visited {}
+
+/*important 는 지양할 것*/
+/*각 각 다르게 적용시킬 거면 전부 나눠서 할 것*/
+/*연결 선택자, 속성 선택자 까지 쓰는 경우는 전부 같을 때만 그렇게 하자*/
+#menu_05:hover {
+    background-color: red !important;
+}
+
+#menu_05:active {}
