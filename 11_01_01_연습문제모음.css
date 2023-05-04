@@ -1,0 +1,31 @@
+.main_frame_00 {
+    background-color: rgb(52, 52, 139);
+    color: white;
+
+    width: 200px;
+    height: 100px;
+
+    text-align: center;
+}
+
+.main_hover_00:hover {
+    transform: translate(50px, 50px);
+}
+
+.main_hover_01:hover {
+    margin: 0 auto;
+    transform: scale(3);
+}
+
+/*degree (각도)*/
+/*회전 각도가 양수(+) 이면 오른쪽으로,*/
+/*음수(-) 이면 왼쪽으로 회전*/
+.main_hover_02:hover {
+    transform: rotate(40deg);
+}
+
+/*radian (래디안)*/
+
+.main_hover_03:hover {
+    transform: rotate(40rad);
+}
