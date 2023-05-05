@@ -1,0 +1,69 @@
+.main_frame_00 {
+    background-color: rgb(71, 71, 190);
+    color: white;
+
+    text-align: center;
+    width: 200px;
+    height: 100px;
+
+    margin-left: 100px;
+}
+
+.main_hover_04:hover {
+    transform: rotateX(50deg);
+
+}
+
+.main_pers_00 {
+    perspective: 300px;
+}
+
+
+/*세트_01*/
+.main_hover_05:hover {
+    transform: rotateX(30deg);
+}
+
+.main_pers_01 {
+    perspective: 300px;
+}
+
+/*세트_02*/
+.main_hover_06:hover {
+    transform: rotateY(-30deg);
+}
+
+.main_pers_02 {
+    perspective: 200px;
+}
+
+/*세트_03*/
+.main_hover_07:hover {
+    transform: rotateZ(30deg);
+}
+
+.main_pers_03 {
+    perspective: 500px;
+}
+
+/*세트_04*/
+.main_hover_08:hover {
+    transform: rotate3d(2.5, 1.2, -1.5, 55deg);
+}
+
+.main_pers_04 {
+    perspective: 200px;
+}
+
+/*도형 비틀기*/
+.main_hover_09:hover {
+    transform: skewX(400deg);
+}
+
+.main_hover_10:hover {
+    transform: skewY(-400deg);
+}
+
+.main_hover_11:hover {
+    transform: skew(-25deg, -15deg);
+}
