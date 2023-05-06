@@ -1,0 +1,41 @@
+.main_00 p,
+.main_00 h3 {
+    color: white;
+    text-align: center;
+}
+
+.main_00 li {
+    float: left;
+    list-style: none;
+
+    position: relative;
+}
+
+.main_frame_00 {
+    width: 250px;
+    height: 200px;
+
+    background-color: rgb(84, 84, 185);
+    margin-left: 30px;
+}
+
+.main_frame_01 {
+    margin-left: 30px;
+
+    position: absolute;
+    margin-top: 20px;
+    width: 250px;
+    height: 200px;
+
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+    z-index: 10;
+}
+
+/*ul_00 안에 있는 li 에 마우스를 가져다대면,*/
+/*main_frame_01 의 창에 css 를 적용시킴*/
+.ul_00 li:hover .main_frame_01 {
+    opacity: 1;
+    transform: translateY(-220px);
+}
