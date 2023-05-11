@@ -1,0 +1,49 @@
+.main_frame_01 [class*=menu] {
+    float: left;
+    background-color: gray;
+}
+
+.main_menu_01 {
+    padding: 5px 20px;
+    border-right: 1px solid black;
+    border-radius: 3px;
+}
+
+.main_menu_02 {
+    padding: 5px 20px;
+    border-right: 1px solid black;
+    border-radius: 2px;
+}
+
+.main_menu_03 {
+    padding: 5px 20px;
+    border-right: 1px solid black;
+    border-radius: 2px;
+}
+
+.main_menu_04 {
+    padding: 5px 20px;
+    border-right: 1px solid black;
+    border-radius: 2px;
+}
+
+.main_menu_05 {
+    padding: 5px 20px;
+    border-right: 1px solid black;
+    border-radius: 2px;
+}
+
+.main_menu_06 {
+    padding: 5px 20px;
+    border-radius: 2px;
+}
+
+/*마우스를 가져다 대면 배경색이 바뀌도록 변경*/
+/*transition 을 사용하여 0.55초 내에 바뀌도록 변경*/
+[class*=main_menu]:hover {
+    background-color: black;
+    color: white;
+
+    transition-duration: 0.55s;
+    transition-timing-function: ease-in;
+}
