@@ -1,0 +1,38 @@
+/*기본값*/
+.box_01 {
+    width: 400px;
+    height: 400px;
+
+    background-color: rgb(117, 117, 190);
+}
+
+/*가로가 1024px 이하일 때 실행*/
+@media screen and (max-width: 1024px) {
+    .box_01 {
+        width: 200px;
+        height: 200px;
+
+        background-color: rgb(4, 4, 44);
+        border-radius: 50%;
+
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+
+        transform: rotate(180deg);
+    }
+}
+
+/*가로가 1025px 이상이면 실행*/
+@media screen and (min-width: 1025px) {
+    .box_01 {
+        width: 400px;
+        height: 400px;
+
+        background-color: rgb(117, 117, 190);
+
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+
+        transform: rotate(180deg);
+    }
+}
