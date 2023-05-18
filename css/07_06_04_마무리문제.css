@@ -1,0 +1,41 @@
+.form_01 {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/*제목 글씨 색*/
+.h2_01 {
+    color: #ff0000;
+}
+
+/*윗 제목의 css 조절*/
+.h4_01 {
+    background-color: black;
+    color: white;
+    padding: 0.5cm;
+    margin: 0;
+}
+
+/*fieldset의 윗 선을 제거 & 가운데 정렬*/
+.fd_01 {
+    border-top: 0;
+    text-align: center;
+}
+
+/*파란색 글씨 적용*/
+.accent_01 {
+    color: #0000ff;
+}
+
+/*폰트 사이즈, 굵기 조절 & 줄 간격 조절*/
+p {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.st_01 {
+    font-weight: bold;
+    font-size: 0.7em;
+}

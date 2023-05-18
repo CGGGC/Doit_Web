@@ -1,0 +1,23 @@
+.main_box_01 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(111, 111, 192);
+    border-radius: 100%;
+
+    margin-left: 50px;
+
+    transform: perspective(200px);
+
+    animation-name: rotate;
+    animation-duration: 3s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}

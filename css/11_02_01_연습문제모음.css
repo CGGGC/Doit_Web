@@ -1,0 +1,49 @@
+.main_frame_00 {
+    margin-left: 100px;
+    margin-top: 100px;
+
+    background-color: rgb(79, 79, 172);
+    color: white;
+
+    width: 100px;
+    height: 100px;
+
+    text-align: center;
+}
+
+.main_text_00 {
+    display: none;
+}
+
+/*한 번에 해도 됨*/
+/*그러나 가독성이 떨어진다고 생각함*/
+/*
+.main_trans_00:hover {
+    transition-property: width, height;
+    transition-duration: 0.5s, 0.7s;
+
+    width: 400px;
+    height: 200px;
+}
+*/
+.main_trans_00 {
+    transition-property: width, height;
+    transition-duration: 0.5s, 0.7s;
+}
+
+.main_trans_00:hover {
+    width: 400px;
+    height: 200px;
+}
+
+/*트랜지션 속성 한꺼번에 지정하기*/
+.main_trans_01 {
+    transition: 1s ease-in;
+}
+
+.main_trans_01:hover {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(192, 178, 178);
+    transform: rotate(270deg);
+}

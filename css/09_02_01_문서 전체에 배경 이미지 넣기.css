@@ -1,0 +1,20 @@
+/*이미지 url 은 알아서 넣을 것*/
+#body_01 {
+    background-image: url("");
+    background-size: 50%;
+    /*margin 사용 x & float 사용 x*/
+    /*position 으로 위치 조절 가능*/
+    background-position: top center;
+    background-attachment: fixed;
+    /*백그라운드의 기본 옵션은 repeat*/
+    background-repeat: no-repeat;
+
+}
+
+#font_01 {
+    margin-top: 150px;
+    font-size: 80px;
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px gray;
+}

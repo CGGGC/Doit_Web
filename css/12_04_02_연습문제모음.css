@@ -1,0 +1,76 @@
+/*[04]*/
+.p_box_04 {
+    display: flex;
+
+    height: 400px;
+
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+}
+
+.p_box_04 [class*=c_box] {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(104, 104, 209);
+
+    color: white;
+    text-align: center;
+
+    border: 1px solid white;
+
+    margin: 1px 1px;
+}
+
+.c_box_16 {
+    align-self: flex-end;
+}
+
+.c_box_20 {
+    align-self: end;
+}
+
+.c_box_17 {
+    align-self: center;
+}
+
+.c_box_18 {
+    /*문자 기준선에 맞춰 배치*/
+    align-self: baseline;
+}
+
+.c_box_19 {
+    align-self: stretch;
+}
+
+/*[05]*/
+/*align-content: end 와 align-items: end 는 비슷*/
+/*한 줄일 때는 items 속성 사용할 것*/
+.p_box_05 {
+    display: flex;
+
+    height: 400px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /*align-content: start;*/
+    /*align-content: end;*/
+    /*align-content: center;*/
+    align-content: space-between;
+    /*space-between 과 height 를 조절해서 사용해주면 될 듯*/
+    /*align-content: space-around;*/
+    /*align-content: stretch;*/
+}
+
+.p_box_05 [class*=c_box] {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(39, 39, 109);
+
+    color: white;
+    text-align: center;
+
+    border: 1px solid white;
+
+    margin: 1px 1px;
+}

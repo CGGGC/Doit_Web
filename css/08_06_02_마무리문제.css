@@ -1,0 +1,51 @@
+/*main_03 부터는 밑으로 가도록 조절*/
+.body_01 {
+    width: 1200px;
+}
+
+/*왼쪽 플로팅 효과 & 본문 전체 실선효과*/
+.main_01 {
+    float: left;
+    border: 1px dashed gray;
+}
+
+/*왼쪽 플로팅 효과 & 본문 전체 실선 효과*/
+.main_02 {
+    float: left;
+    border: 1px dashed gray;
+    margin-left: 20px;
+    /*main_01 과 띄어주기 위해 마진 20px 사용*/
+}
+
+/*왼쪽 플로팅 효과 & 본문 전체 실선 효과*/
+.main_03 {
+    float: left;
+    border: 1px dashed gray;
+    margin-top: 20px;
+    /*main_01 과 띄어주기 위해*/
+}
+
+/*왼쪽 플로팅 효과 & 본문 전체 실선 효과*/
+.main_04 {
+    float: left;
+    border: 1px dashed gray;
+    margin-left: 20px;
+    margin-top: 20px;
+    /*main_02, main_03 과 띄어주기 위해*/
+}
+
+/*제목과 <p>의 요소 위치를 맞춰주기 위함*/
+.h3_01 {
+    margin: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+/*p 요소의 내용 위치 조절*/
+/*이걸로 본문 한 번에 변경 가능하도록 class 사용*/
+.article {
+    height: 200px;
+    width: 480px;
+    margin: 10px;
+    padding: 10px;
+}

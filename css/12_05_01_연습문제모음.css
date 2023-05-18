@@ -1,0 +1,155 @@
+/*[01]*/
+.main_frame_01 {
+    display: grid;
+
+    width: 500px;
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    /*같은 xfr 으로 반복될 때 repeat 사용*/
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-rows: 100px 100px;*/
+    /*최소 100px, 최대는 자동*/
+    grid-template-rows: minmax(100px, auto);
+}
+
+.main_frame_01 [class*=basic] {
+    background-color: rgb(100, 100, 204);
+    color: white;
+
+    border: 1px solid white;
+    margin: 1px 1px;
+    /*width 를 하게되면 grid-template-columns 에 의해 박스가 겹침*/
+    /*width: 300px;*/
+}
+
+/*[02]*/
+.main_frame_02 {
+    display: grid;
+
+    width: 100%;
+
+    /*auto-fit 은 200px 을 넘어서 그대로 박아버리며,*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*auto-fill 은 200px 을 끝으로 width 기준으로 100% 일 때 화면을 전부 채우지 않음*/
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.main_frame_02 [class*=basic] {
+    background-color: rgb(32, 32, 109);
+    color: white;
+
+    border: 1px solid white;
+    margin: 1px 1px;
+}
+
+/*[03]*/
+.main_frame_03 {
+    display: grid;
+
+    width: 700px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 80px;
+    grid-column-gap: 20px;
+    /*줄 간격 80px, 칼럼 간격 20px 한 번에 조절할 때는 grid-gap 사용*/
+    /*gird-gap: 80px 20px;*/
+}
+
+.main_frame_03 [class*=basic] {
+    background-color: rgb(134, 134, 180);
+    color: white;
+
+    border: 1px solid white;
+    margin: 1px 1px;
+}
+
+/*[04]*/
+.main_frame_04 {
+    display: grid;
+
+    margin-top: 100px;
+
+    width: 700px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+/*다리 모양으로 하고싶을 땐 이렇게,*/
+/*그리드 라인을 이용해서 0x0 구간에서 마음대로 박스 요소를 조절 가능함.*/
+.main_frame_04 [class*=basic] {
+    color: white;
+}
+
+.basic_frame_16 {
+    background-color: rgb(114, 114, 114);
+    grid-column: 1/4;
+}
+
+.basic_frame_17 {
+    background-color: rgb(134, 134, 180);
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.basic_frame_18 {
+    background-color: rgb(37, 37, 156);
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.basic_frame_19 {
+    background-color: black;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.basic_frame_20 {
+    background-color: rgb(134, 189, 202);
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+/*[05]*/
+.main_frame_05 {
+    display: grid;
+
+    margin-top: 100px;
+
+    width: 700px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+
+    grid-template-areas:
+        "box_01 box_01 box_01"
+        "box_02 box_03 box_03"
+        "box_04 . box_05";
+    /*빈 곳은 . 으로 대신해주면 된다.*/
+    /*그리드 라인보다 areas 만 지정해주면 되어서 더욱 간편하다는 장점이 있다.*/
+}
+
+.main_frame_05 [class*=basic] {
+    color: white;
+}
+
+.basic_frame_21 {
+    background-color: rgb(114, 114, 114);
+    grid-area: box_01;
+}
+
+.basic_frame_22 {
+    background-color: rgb(134, 134, 180);
+    grid-area: box_02;
+}
+
+.basic_frame_23 {
+    background-color: rgb(37, 37, 156);
+    grid-area: box_03;
+}
+
+.basic_frame_24 {
+    background-color: black;
+    grid-area: box_04;
+}
+
+.basic_frame_25 {
+    background-color: rgb(134, 189, 202);
+    grid-area: box_05;
+}

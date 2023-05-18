@@ -1,0 +1,23 @@
+#pos_01 {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+#pos_02 {
+    position: absolute;
+    right: 100px;
+    top: 100px
+}
+
+#pos_03 {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+}
+
+#pos_04 {
+    position: fixed;
+    top: 200px;
+    left: 200px;
+}

@@ -1,0 +1,19 @@
+fieldset {
+    margin: 600px;
+}
+
+#container_00 {
+    width: 600px;
+    margin: 20px auto;
+}
+
+.title_01 {
+    display: inline-block;
+    background-color: #0404aa;
+    color: white;
+}
+
+.accent {
+    font-weight: bold;
+    color: red;
+}

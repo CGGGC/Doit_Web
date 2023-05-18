@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) and (max-width: 1439px) {}
+
+/*화면용, 인쇄용 미디어커리 따로 만들 시,,*/
+@media screen {}
+
+@media print {}
+
+/*아이폰 x 의 경우 미디어 쿼리*/
+@media screen and (min-device-width: 375px) and (min-device-height: 812px) {}
+
+/*아이폰 x 가로로 돌릴 때 미디어 쿼리*/
+/*가로로 돌리니 너비가 812px 이 됨 (세로모드에서의 높이 = 가로모드에서의 너비)*/
+@media screen and (min-device-width: 812px) and (orientation: landscape) {}
+
+.box_01 {
+    font-size: 3vw;
+}
+
+.box_02 {
+    font-size: 10px;
+}

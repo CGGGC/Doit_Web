@@ -1,0 +1,15 @@
+#hi {
+    /*원 그리기 밑작업*/
+    padding: 100px;
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+    background-color: rgb(50, 61, 209);
+    margin: 200px auto;
+
+    /*원에 단색 실선 추가*/
+    border: 1px solid rgb(84, 84, 197);
+
+    /*원에 그림자 효과 부여*/
+    box-shadow: 5px 5px 30px 2px #639de9;
+}

@@ -1,0 +1,53 @@
+/*전체 문서 배경색 지정*/
+body {
+    background-color: #02233b
+}
+
+/*p 요소까지는 전부 흰색*/
+#container_01 {
+    /*body에 br을 써서 흰 배경을 늘리지말고
+    height & width 을 이용하자*/
+    height: 700px;
+    width: 600px;
+
+    background-color: white;
+    /*이미지 알아서 지정*/
+    background: url("");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#head_01 {
+    color: white;
+    background-color: green;
+    margin: 0 auto;
+    /*top 설정으로 h2 간격 조절*/
+    padding-top: 50px;
+    height: 80px;
+    width: 95%;
+    /*콘텐츠 요소까지만 배경 지정*/
+    /*이게 있어야 깔금하게 띄이며, 배경색이 의도대로 적용됨*/
+    background-clip: content-box;
+
+    text-align: center;
+    /*h1의 콘텐츠 요소 중앙정렬*/
+    line-height: 80px;
+}
+
+#head_02 {
+    text-align: center;
+}
+
+#font_01 {
+    color: orangered;
+    font-weight: bolder;
+    font-size: 15pt;
+    margin-left: 70px;
+}
+
+#font_02 {
+    margin-left: 140px;
+}

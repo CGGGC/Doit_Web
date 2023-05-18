@@ -1,0 +1,83 @@
+/*[01]*/
+/*flex-direction 속성은 부모 컨테이너에,*/
+.p_box_01 {
+    display: flex;
+    text-align: center;
+
+    color: white;
+
+    /*플렉스 항목 배치하기*/
+    /*flex-direction: row;*/
+    flex-direction: row-reverse;
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+
+    /*플렉스 항목의 줄 바꾸기*/
+    /*flex-wrap: nowrap;*/
+    /*flex-wrap: wrap;*/
+    flex-wrap: wrap-reverse;
+}
+
+.p_box_01 [class*=c_box] {
+    background-color: rgb(86, 86, 196);
+
+    width: 200px;
+    height: 100px;
+
+    border: 1px solid white;
+
+    margin: 1px 1px;
+}
+
+/*[02]*/
+.p_box_02 {
+    display: flex;
+    text-align: center;
+    color: white;
+
+    flex-flow: row wrap;
+}
+
+.p_box_02 [class*=c_box] {
+    background-color: rgb(43, 43, 110);
+
+    width: 200px;
+    height: 100px;
+
+    border: 1px solid white;
+
+    margin: 1px 1px;
+}
+
+/*[03]*/
+.p_box_03 {
+    display: flex;
+    text-align: center;
+    color: white;
+
+    height: 500px;
+    flex-direction: row-reverse;
+
+    /*justify-content: flex-start;*/
+    justify-content: flex-end;
+    /*justify-content: center;*/
+    /*justify-content: space-between;*/
+    /*justify-content: space-around;*/
+
+    /*align-items: flex-start;*/
+    align-items: flex-end;
+    /*align-items: center;*/
+    /*align-items: baseline;*/
+    /*align-items: stretch;*/
+}
+
+.p_box_03 [class*=c_box] {
+    background-color: rgb(27, 27, 61);
+
+    width: 200px;
+    height: 100px;
+
+    border: 1px solid white;
+
+    margin: 1px 1px;
+}

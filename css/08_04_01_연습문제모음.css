@@ -1,0 +1,21 @@
+#ul_00 {
+    list-style: none;
+}
+
+li {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 30px;
+    margin: 0 20px;
+}
+
+/*form 박스 띄어줌*/
+#fs_01 {
+    margin-top: 30px;
+    width: 600px;
+}
+
+#img_01 {
+    float: left;
+    margin: 30px;
+}

@@ -1,0 +1,10 @@
+.font_00 {
+    list-style-type: none;
+}
+
+.font_01 {
+    font-weight: bold;
+    font-size: 15pt;
+    line-height: 2;
+    color: #ad3000;
+}
