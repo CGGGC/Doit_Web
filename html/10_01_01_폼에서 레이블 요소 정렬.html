@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 정보 & 개인 정보</title>
+    <link rel="stylesheet" href="10_01_01_폼에서 레이블 요소 정렬.css">
+</head>
+
+<div id="main_00">
+
+    <body>
+        <form>
+            <fieldset class="fd_00">
+                <legend class="legend_00">로그인 정보</legend>
+                <br><label class="label_00">아이디</label>
+                <input type="text" id="login_id">
+                <br><br><label class="label_00">비밀번호</label>
+                <input type="password" id="login_pw">
+                <br><br><label class="label_00">비밀번호 확인</label>
+                <input type="password" id="login_pww">
+                <br><br><label class="label_00">회원 등급</label>
+                <input type="text" id="login_lev">
+            </fieldset>
+        </form>
+
+        <br><br>
+        <form>
+            <fieldset class="fd_00">
+                <legend class="legend_00">개인 정보</legend>
+                <br><label class="label_00">이름</label>
+                <input type="text" id="add_id" placeholder="5자미만 공백없이">
+                <br><br><label class="label_00">메일 주소</label>
+                <input type="email" id="add_email" placeholder="abcd@domain.com">
+                <br><br><label class="label_00">연락처</label>
+                <input type="number" id="add_num">
+            </fieldset>
+        </form>
+
+        <br><br>
+        <form>
+            <fieldset class="fd_00">
+                <div id="ok"><input type="submit" id="submit_00"></div>
+            </fieldset>
+        </form>
+    </body>
+</div>
+
+</html>
