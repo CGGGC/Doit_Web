@@ -1,0 +1,52 @@
+/*[01] 구구단 스타일 시트 만들기*/
+.main_frame_01 {
+    display: inline-block;
+    text-align: center;
+}
+
+.box_01 {
+    background-color: rgb(112, 112, 212);
+    color: white;
+}
+
+.box_01 h1 {
+    color: rgb(196, 191, 191);
+}
+
+.box_01 div {
+    display: inline-block;
+    padding: 0 20px 30px 20px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    line-height: 2;
+}
+
+/*[02]*/
+.main_frame_02 {
+    display: inline-block;
+    text-align: center;
+}
+
+.box_02 {
+    background-color: rgb(134, 111, 216);
+    color: white;
+}
+
+.box_02 h1 {
+    color: rgb(196, 191, 191);
+}
+
+/*[03]*/
+.main_frame_03 {
+    display: inline-block;
+    text-align: center;
+}
+
+.box_03 {
+    background-color: rgb(211, 160, 208);
+    color: white;
+}
+
+.box_03 h1 {
+    color: rgb(196, 191, 191);
+}
