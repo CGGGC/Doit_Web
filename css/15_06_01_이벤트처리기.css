@@ -1,0 +1,33 @@
+/*기본적인 css 적용*/
+.main_frame_01 {
+    display: grid;
+    width: 500px;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 50px;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.main_frame_01 [class*=box_] {
+    border: 1px solid black;
+    text-align: center;
+
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+.main_frame_02 {
+    width: 500px;
+    height: 500px;
+
+    border: 1px solid black;
+
+    margin-left: 80px;
+}
+
+/*하이퍼링크 클릭해도 색 변하지 않도록 적용*/
+.main_frame_01 a {
+    color: black;
+    text-decoration-line: none;
+}
