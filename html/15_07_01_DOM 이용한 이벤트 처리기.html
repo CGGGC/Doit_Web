@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 클릭해서 설명 글 열고 닫기 - DOM 이벤트 처리기 연결</title>
+</head>
+
+<div>
+
+    <body>
+        <div>
+            <button class="over" id="open">상세 설명 보기</button>
+            <!--전 코드와 달리 HTML 코드에 자바스크립트 소스가 섞여있지 않음-->
+            <div id="desc" class="detail">
+                <h4>등심붓꽃</h4>
+                <p>북에마리카 원산으로 ~ 번식한다.</p>
+                <button id="close">상세 설명 닫기</button>
+            </div>
+        </div>
+    </body>
+</div>
+
+<script>
+    document.querySelector('#open').onclick = function () {
+        document.querySelector('#desc').style.display = "block";
+        document.querySelector('#open').style.display = "none";
+    }
+    document.querySelector('#close').onclick = function () {
+        document.querySelector('#desc').style.display = "none";
+        document.querySelector('#open').style.display = "block";
+    }
+</script>
+
+</html>
