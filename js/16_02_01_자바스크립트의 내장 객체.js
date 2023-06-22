@@ -80,3 +80,52 @@ function Arr_07() {
     let popped_02 = arr_chars.shift();
     document.write("꺼낸 요소: ", popped_02, " | 배열: ", arr_chars);
 }
+
+// 사용자가 원하는 위치에 요소를 추가&삭제 splice() 메서드
+// [1] splice() 메서드의 인수가 1개인 경우 요소 삭제
+function Arr_08() {
+    let arr_nums = [1, 2, 3, 4, 5];
+    document.write("기존 배열: ", arr_nums);
+    document.write("<br>")
+
+    // 3번째 요소부터 모두 삭제
+    // arR_nums 의 배열은 삭제된 것으로 변경
+    let new_numbers = arr_nums.splice(2);
+    document.write("반환된 배열: " + new_numbers + "<br>");
+}
+
+// [2] splice() 메서드의 인수가 2개인 경우 요소 삭제
+function Arr_09() {
+    let arr_string = ["html", "css", "web", "jquery"];
+    document.write("기존 배열: ", arr_string);
+    document.write("<br>")
+
+    // 3번째에 있는 요소부터 1개를 삭제 -> (2,1)
+    let new_string = arr_string.splice(2, 1);
+    document.write("삭제한 배열: " + new_string + "<br>");
+    document.write("변경된 기존 배열: " + arr_string + "<br>");
+}
+
+// [3] splice() 메서드의 인수가 3개인 경우 요소 삭제 추가
+function Arr_10() {
+    let arr_string = ["html", "css", "web", "jquery"];
+    document.write("기존 배열: ", arr_string);
+    document.write("<br>")
+
+    // 인덱스값이 2 인 요소 1개를 삭제하고 새로운 요소 "..." 을 추가 -> (2,1,...)
+    let new_string = arr_string.splice(2, 1, "js");
+    document.write("삭제한 배열: " + new_string + "<br>");
+    document.write("삭제 후 추가된 기존 배열: " + arr_string + "<br>");
+}
+
+// 기존 배열을 바꾸지 않고 요소를 꺼내는 slice() 메서드
+// splice() 메서드와 다른 점은 기존 배열이 바뀌지 않는다는 점
+function Arr_11() {
+    let arr_colors = ["red", "green", "blue", "white", "black"];
+    document.write("기존 배열: ", arr_colors);
+    document.write("<br>")
+
+    // 인덱스값이 2 인 요소부터 마지막 요소까지 꺼냄
+    let arr_colors2 = arr_colors.slice(2);
+    document.write("꺼낸 요소: " + arr_colors2 + "<br>");
+}
