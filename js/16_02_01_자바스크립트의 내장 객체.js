@@ -119,6 +119,7 @@ function Arr_10() {
 }
 
 // 기존 배열을 바꾸지 않고 요소를 꺼내는 slice() 메서드
+// slice() 메서드의 인수가 1개인 경우 요소 꺼내기
 // splice() 메서드와 다른 점은 기존 배열이 바뀌지 않는다는 점
 function Arr_11() {
     let arr_colors = ["red", "green", "blue", "white", "black"];
@@ -128,4 +129,15 @@ function Arr_11() {
     // 인덱스값이 2 인 요소부터 마지막 요소까지 꺼냄
     let arr_colors2 = arr_colors.slice(2);
     document.write("꺼낸 요소: " + arr_colors2 + "<br>");
+}
+
+// slice() 메서드의 인수가 2개인 경우 요소 꺼내기
+function Arr_12() {
+    let arr_colors = ["red", "green", "blue", "white", "black"];
+    document.write("기존 배열: ", arr_colors);
+    document.write("<br>")
+
+    // 인덱스 값이 2 부터 3(4-1) 요소까지 꺼내기
+    let arr_colors3 = arr_colors.slice(2, 4);
+    document.write("꺼낸 요소: " + arr_colors3 + "<br>");
 }
