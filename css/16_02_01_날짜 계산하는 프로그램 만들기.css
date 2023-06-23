@@ -1,0 +1,20 @@
+.main_frame_01 {
+    background-color: rgb(125, 125, 196);
+
+    width: 400px;
+    height: 400px;
+
+    border-radius: 100%;
+    border: 1px rgb(40, 40, 95) solid;
+}
+
+.main_frame_01 [class*=sub_frame_01] {
+    text-align: center;
+
+    padding-top: 100px;
+}
+
+.css {
+    font-size: 50px;
+    color: white;
+}
