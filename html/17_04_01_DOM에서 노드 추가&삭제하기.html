@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM에서 임의의 노드 추가 삭제하기</title>
+    <script src="17_04_01_DOM에서 노드 추가&삭제하기.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>DOM을 공부합시다.</h1>
+        <!--this.onclick=' 코드는 addP() 함수가 한 번만 실행되도록 하기 위한 것-->
+        <a href="#" onclick="addP(); this.onclick='';">더 보기</a>
+        <div id="info"></div>
+    </div>
+</body>
+
+</html>
